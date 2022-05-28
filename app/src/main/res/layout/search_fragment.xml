@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/titleSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tim kiem theo ngay xuat hien"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/startEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleSearch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="Nhap ngay bat dau" />
+
+    <EditText
+        android:id="@+id/endEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/startEt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="Nhap ngay ket thuc"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tim kiem"
+        app:layout_constraintTop_toBottomOf="@id/endEt"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/searchBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp" />
+
+
+
+    <TextView
+        android:id="@+id/titleThongKe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thong ke so luong chung covid theo tung thang cua nam nay"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listView"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/resultTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleThongKe"
+        android:layout_marginTop="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

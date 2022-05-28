@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Them covid 19"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="Nhap ten ..."
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nameEt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="ARN" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cb1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Protein-s" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cb2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Protein-N" />
+
+    <EditText
+        android:id="@+id/dateEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cb3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="Chon ngay xuat hien ..."
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dateEt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Da co vacxin" />
+
+    <CheckBox
+        android:id="@+id/cb5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cb4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Chua co vacxin" />
+
+    <EditText
+        android:id="@+id/slEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cb5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="Nhap so luong quoc gia .."
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/slEt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="ADD"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/slEt"
+        app:layout_constraintLeft_toRightOf="@id/addBtn"
+        android:text="CANCEL"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

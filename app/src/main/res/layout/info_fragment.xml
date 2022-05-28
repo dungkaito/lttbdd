@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/covid" />/>
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Biến thể Omicron tại Hoa Kỳ"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/reasonTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nameTv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Thong tin: Biến thể Omicron lây lan dễ dàng hơn các biến thể trước đó của vi-rút gây bệnh COVID-19, bao gồm cả biến thể Delta. CDC hy vọng rằng bất kỳ ai bị nhiễm Omicron, bất kể tình trạng tiêm chủng hay họ có các triệu chứng hay không, đều có thể lây vi-rút cho người khác."
+        android:textSize="16sp"
+        android:layout_marginTop="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
